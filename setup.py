@@ -3,7 +3,7 @@ import distutils.core
 import py2exe
 import cx_Freeze
 
-use_cx_freeze = True  # False for py2exe
+use_cx_freeze = False  # False for py2exe
 
 if use_cx_freeze:
 
