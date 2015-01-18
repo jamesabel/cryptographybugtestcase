@@ -1,8 +1,8 @@
 
 import os
-import latus.crypto
+import core.crypto
 
-key = latus.crypto.new_key()
+key = core.crypto.new_key()
 
 print('key', key)
 
@@ -16,7 +16,7 @@ output_file_path = os.path.join(data_folder, 'out.txt')
 if not os.path.exists(data_folder):
     os.mkdir(data_folder)
 
-c = latus.crypto.Crypto(key)
+c = core.crypto.Crypto(key)
 
 with open(input_file_path, 'w') as f:
     f.write('hi')
