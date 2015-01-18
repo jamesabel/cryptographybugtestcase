@@ -1,0 +1,4 @@
+
+cryptography
+cx_Freeze
+py2exe
