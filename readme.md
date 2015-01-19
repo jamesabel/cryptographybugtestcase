@@ -1,5 +1,5 @@
 
-Test case for a problem I'm having with cryptography.
+Test case for a problem I'm having with the cryptography module.
 
 I can execute from the Python code directly no problem, but when I try to freeze it and make an executable with either
 cx_freeze or py2exe, I get the error message below.  I've also included a pre-built Windows .exe in the dist folder.
