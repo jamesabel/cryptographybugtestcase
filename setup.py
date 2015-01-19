@@ -1,7 +1,16 @@
 
+import shutil
+import os
 import distutils.core
 import py2exe
 import cx_Freeze
+
+output_folders = ['dist', 'build']
+
+for folder in output_folders:
+    if os.path.exists(folder):
+        print('removing', folder)
+        shutil.rmtree(folder)
 
 use_cx_freeze = False  # False for py2exe
 
@@ -22,4 +31,8 @@ else:
         console=['testcase.py'],
         name="testcase",
         version="0.0",
+
+        # single file binary
+        options={'py2exe': {'bundle_files': 1}},
+        zipfile=None,
     )
